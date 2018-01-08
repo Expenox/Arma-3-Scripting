@@ -1,3 +1,11 @@
+/* * * * * * * * * * * * * * *
+* File: dialogs.hpp
+*
+* Description:
+*  Holds all GUI's
+*
+* Params: None
+* * * * * * * * * * * * * * * */
 class exp_GunShop_Dialog
 {
   idd = 9999;
