@@ -1,0 +1,20 @@
+/*
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   Description.ext                 |
+                                   +
+ 1/6/18                            |
+                                   +
+      Created by: Expenox          |
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+*/
+enableDebugConsole[] = {"76561198052584595"};
+respawn = "BASE";
+disabledAI = 1;
+
+class cfgFunctions
+{
+    #include "functions\functions.hpp"
+};
+
+#include "defines.hpp"
+#include "dialogs.hpp"
