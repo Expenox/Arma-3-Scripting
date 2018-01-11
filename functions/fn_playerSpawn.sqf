@@ -12,6 +12,9 @@ private["_player","_markers","_numOfMarkers"];
 //PARAMS
 params["_player"];
 
+//Remove Weapons
+//_player removeAllWeapons;
+
 //VARIABLES
 _markers = allMapMarkers;
 _numOfMarkers = count _markers;
@@ -20,9 +23,6 @@ _numOfMarkers = count _markers;
 _player addAction ["Damage Self", "(_this select 0) setDamage .5;"];
 _player addAction ["Heal Self", "[(_this select 0)] call exp_fnc_heal;"];
 _player addAction ["Gun Shop", "[] spawn exp_fnc_showGunShopDialog;"];
-
-//Remove Weapons
-_player removeAllWeapons;
 
 //Create random markers close to player on spawn
 for "_i" from 1 to 20 do
