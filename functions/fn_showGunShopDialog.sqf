@@ -6,8 +6,10 @@ createDialog "exp_GunShop_Dialog";
 
 waitUntil {!isNull (findDisplay 9999);};
 
-_ctrl = (findDisplay 9999) displayCtrl 1500;
+_getBox = (findDisplay 9999) displayCtrl 1500;
+_getEquip = (findDisplay 9999) displayCtrl 1600;
+_currentSelection = lbCurSel _ctrl;
 
 {
-  _ctrl lbAdd _x;
+  _getBox lbAdd _x;
 } forEach _shopItems;
