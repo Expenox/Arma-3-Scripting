@@ -28,7 +28,7 @@ _player addAction ["Gun Shop", "[] spawn exp_fnc_showGunShopDialog;"];
 for "_i" from 1 to 20 do
 {
   scopeName "mrkMaking";
-  private["_markers"];
+  private _markers = allMapMarkers;
 
   if((getDammage _player) > 0) then
   {
@@ -39,7 +39,6 @@ for "_i" from 1 to 20 do
   _pos = [_playerPos, 1, 20, 10, 0, 900, 0] call bis_fnc_findSafePos;
   _marker = createMarker [_temp, _pos];
   _marker setMarkerType "hd_dot";
-  _markers = allMapMarkers;
   {
     sleep 1;
     _player sideChat str(_x);
